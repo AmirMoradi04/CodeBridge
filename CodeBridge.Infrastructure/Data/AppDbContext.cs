@@ -68,6 +68,8 @@ public class AppDbContext : IdentityDbContext<User, Role, int>
 
     public DbSet<PasswordHistory> PasswordHistories => Set<PasswordHistory>();
 
+    public DbSet<Saeed> Saeeds => Set<Saeed>();
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
